@@ -15,25 +15,24 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter('default'));
 });
 
-// Concatenate & minify JS
+// Minify JS
 gulp.task('scripts', function() {
   return gulp.src('js/*.js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('dist'))
-    .pipe(rename('all.min.js'))
+    .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('js/min'));
 });
 
 // Compile & minify SASS
 gulp.task('styles', function() {
   return gulp.src('sass/*.sass')
     .pipe(sass())
-    .pipe(concat('all.css'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('css'))
     .pipe(minifyCss())
-    .pipe(rename('all.min.css'))
-    .pipe(gulp.dest('dist'));
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('css/min'))
+    .pipe(concat('all.min.css'))
+    .pipe(gulp.dest('css/min'));
 });
 
 // Compile index.html
