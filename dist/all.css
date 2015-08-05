@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400; }
+
+form {
+  max-width: 600px;
+  margin: 0 auto; }
+  form .row {
+    margin: 10px 20px; }
+  form h2 {
+    margin: 50px 0 30px 0;
+    color: #333;
+    text-transform: uppercase; }
+    form h2 small {
+      display: block;
+      margin-top: 5px;
+      color: #999;
+      font-weight: 400;
+      font-size: 14px; }
+
+.form-button {
+  vertical-align: top;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer; }
+  .form-button.red {
+    background: #E74C3C; }
+    .form-button.red:hover, .form-button.red .submit:hover {
+      background: #D64541; }
+    .form-button.red.active, .form-button.red .input, .form-button.red .submit {
+      color: #D64541; }
+  .form-button.blue {
+    background: #22A7F0; }
+    .form-button.blue:hover, .form-button.blue .submit:hover {
+      background: #3498DB; }
+    .form-button.blue.active, .form-button.blue .input, .form-button.blue .submit {
+      color: #3498DB; }
+  .form-button.green {
+    background: #26C281; }
+    .form-button.green:hover, .form-button.green .submit:hover {
+      background: #03A678; }
+    .form-button.green.active, .form-button.green .input, .form-button.green .submit {
+      color: #03A678; }
+  .form-button.purple {
+    background: #8E44AD; }
+    .form-button.purple:hover, .form-button.purple .submit:hover {
+      background: #674172; }
+    .form-button.purple.active, .form-button.purple .input, .form-button.purple .submit {
+      color: #674172; }
+  .form-button label, .form-button input, .form-button button {
+    vertical-align: top;
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px; }
+    .form-button label:focus, .form-button input:focus, .form-button button:focus {
+      outline: none; }
+    .form-button label.cta, .form-button input.cta, .form-button button.cta {
+      cursor: pointer;
+      padding-right: 16px; }
+      .form-button label.cta .icon, .form-button input.cta .icon, .form-button button.cta .icon {
+        vertical-align: top;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 16px; }
+      .form-button label.cta .text, .form-button input.cta .text, .form-button button.cta .text {
+        text-transform: uppercase;
+        margin-left: 12px; }
+    .form-button label.input, .form-button label.submit, .form-button input.input, .form-button input.submit, .form-button button.input, .form-button button.submit {
+      display: none; }
+    .form-button label.input, .form-button input.input, .form-button button.input {
+      width: 0;
+      height: 16px;
+      line-height: 20px;
+      padding: 17px 5px 17px 15px; }
+    .form-button label.submit, .form-button input.submit, .form-button button.submit {
+      cursor: pointer;
+      display: none;
+      font-size: 20px;
+      padding: 0 10px;
+      height: 50px;
+      line-height: 50px; }
+      .form-button label.submit:hover, .form-button input.submit:hover, .form-button button.submit:hover {
+        color: #fff; }
+  .form-button.active {
+    background: #fff !important; }
+    .form-button.active .cta {
+      cursor: auto;
+      padding-right: 0; }
+      .form-button.active .cta .text {
+        display: none; }
+    .form-button.active .input, .form-button.active .submit {
+      background: #fff;
+      display: inline-block; }

@@ -1,0 +1,56 @@
+!!! 5
+%html
+  %head
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
+    %link{ rel:"stylesheet", type: "text/css", href: "http://fonts.googleapis.com/css?family=Montserrat" }
+    %link{ rel: "stylesheet", type: "text/css", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" }
+    %link{ rel: "stylesheet", type: "text/css", href: "dist/all.min.css" }
+    %script{ type: "text/javascript", src: "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" }
+    %script{ type: "text/javascript", src: "dist/all.min.js" }
+
+  %body
+    %form
+      .row
+        %h2
+          Fixed-width buttons
+          %small Input width based on the length of the label
+
+      .row
+        .form-button.fixed-width.red
+          %label.cta{ for: "name" }
+            %i.icon.fa.fa-file-text-o
+            %span.text Create new file
+          %input.input{ type: "text", placeholder: "File name", id: "name", name: "name" }
+          %button.submit{ type: "submit" }
+            %i.fa.fa-arrow-right
+
+      .row
+        .form-button.fixed-width.blue
+          %label.cta{ for: "email" }
+            %i.icon.fa.fa-newspaper-o
+            %span.text Get our newsletter
+          %input.input{ type: "text", placeholder: "Enter your email", id: "email", name: "email" }
+          %button.submit{ type: "submit" }
+            %i.fa.fa-arrow-right
+
+      .row
+        %h2
+          Full-width buttons
+          %small Inputs expand to fill the container
+
+      .row
+        .form-button.full-width.green
+          %label.cta{ for: "search" }
+            %i.icon.fa.fa-search
+          %input.input{ type: "text", placeholder: "Search...", id: "search", name: "search" }
+          %button.submit{ type: "submit" }
+            %i.fa.fa-arrow-right
+
+      .row
+        .form-button.full-width.purple
+          %label.cta{ for: "share" }
+            %i.icon.fa.fa-share-alt
+            %span.text Share
+          %input.input{ type: "text", placeholder: "Email or phone number", id: "share", name: "share" }
+          %button.submit{ type: "submit" }
+            %i.fa.fa-arrow-right

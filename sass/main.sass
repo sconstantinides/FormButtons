@@ -1,0 +1,149 @@
+
+$white: #fff
+$red: #E74C3C
+$dark-red: #D64541
+
+$blue: #22A7F0
+$dark-blue: #3498DB
+
+$green: #26C281
+$dark-green: #03A678
+
+$purple: #8E44AD
+$dark-purple: #674172
+
+body
+  margin: 0
+  padding: 0
+  background: #ddd
+  font-family: Montserrat, sans-serif
+  font-weight: 400
+
+form
+  max-width: 600px
+  margin: 0 auto
+
+  .row
+    margin: 10px 20px
+
+  h2
+    margin: 50px 0 30px 0
+    color: #333
+    text-transform: uppercase
+
+    small
+      display: block
+      margin-top: 5px
+      color: #999
+      font-weight: 400
+      font-size: 14px
+
+.form-button
+  vertical-align: top
+  white-space: nowrap
+  overflow: hidden
+  font-size: 0
+  border-radius: 6px
+  color: $white
+  display: inline-block
+  cursor: pointer
+
+  &.red
+    background: $red
+
+    &:hover, .submit:hover
+      background: $dark-red
+
+    &.active, .input, .submit
+      color: $dark-red
+
+  &.blue
+    background: $blue
+
+    &:hover, .submit:hover
+      background: $dark-blue
+
+    &.active, .input, .submit
+      color: $dark-blue
+
+  &.green
+    background: $green
+
+    &:hover, .submit:hover
+      background: $dark-green
+
+    &.active, .input, .submit
+      color: $dark-green
+
+  &.purple
+    background: $purple
+
+    &:hover, .submit:hover
+      background: $dark-purple
+
+    &.active, .input, .submit
+      color: $dark-purple
+
+  label, input, button
+    vertical-align: top
+    font-family: inherit
+    color: inherit
+    background: none
+    border: none
+    padding: 0
+    margin: 0
+    font-size: 16px
+    height: 50px
+    line-height: 50px
+
+    &:focus
+      outline: none
+
+    &.cta
+      cursor: pointer
+      padding-right: 16px
+
+      .icon
+        vertical-align: top
+        font-size: 20px
+        height: 50px
+        line-height: 50px
+        padding-left: 16px
+
+      .text
+        text-transform: uppercase
+        margin-left: 12px
+
+    &.input, &.submit
+      display: none
+
+    &.input
+      width: 0
+      height: 16px
+      line-height: 20px
+      padding: 17px 5px 17px 15px
+
+    &.submit
+      cursor: pointer
+      display: none
+      font-size: 20px
+      padding: 0 10px
+      height: 50px
+      line-height: 50px
+
+      &:hover
+        color: $white
+
+  &.active
+    background: $white !important
+
+    .cta
+      cursor: auto
+      padding-right: 0
+
+      .text
+        display: none
+
+    .input, .submit
+      background: $white
+      display: inline-block
