@@ -2,6 +2,10 @@
   "name": "FormButtons",
   "version": "1.0.0",
   "description": "Forms within buttons.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sconstantinides/FormButtons.git"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
