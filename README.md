@@ -23,4 +23,4 @@ Inspired by https://dribbble.com/shots/1937525-Create-New-Project
 ```
 
 ## Feedback
-I would love any feedback or suggestions: sconstantinides [at] gmail [dot] com
+Feel free to open issues with suggestions or submit pull requests.
