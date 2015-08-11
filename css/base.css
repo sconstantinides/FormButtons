@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  background: #ddd;
+  background: #eee;
   font-family: Montserrat, sans-serif;
   font-weight: 400; }
 
 form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto; }
   form .row {
     margin: 10px 20px; }
