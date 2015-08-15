@@ -81,4 +81,5 @@
         display: none; }
     .form-button.active .input, .form-button.active .submit {
       background: #fff;
-      display: inline-block; }
+      display: inline-block;}
+

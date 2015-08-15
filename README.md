@@ -21,6 +21,32 @@ Inspired by https://dribbble.com/shots/1937525-Create-New-Project
   </button>
 </div>
 ```
+###Automatically close input when focus is lost
+```html
+<div class="form-button fixed-width red auto-close">
+  <label for="name" class="cta">
+    <i class="icon fa fa-file-text-o"></i>
+    <span class="text">Create new file</span>
+  </label>
+  <input class="input" type="text" placeholder="File name" id="name" name="name">
+  <button class="submit" type="submit">
+    <i class="fa fa-arrow-right"></i>
+  </button>
+</div>
+```
+###Automatically close input when focus is lost only if no text is entered.
+```html
+<div class="form-button fixed-width red auto-close-on-empty">
+  <label for="name" class="cta">
+    <i class="icon fa fa-file-text-o"></i>
+    <span class="text">Create new file</span>
+  </label>
+  <input class="input" type="text" placeholder="File name" id="name" name="name">
+  <button class="submit" type="submit">
+    <i class="fa fa-arrow-right"></i>
+  </button>
+</div>
+```
 
 ## Feedback
 Feel free to open issues with suggestions or submit pull requests.
