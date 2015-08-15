@@ -21,7 +21,7 @@ Inspired by https://dribbble.com/shots/1937525-Create-New-Project
   </button>
 </div>
 ```
-###Automatically close input when focus is lost
+Automatically close input when focus is lost
 ```html
 <div class="form-button fixed-width red auto-close">
   <label for="name" class="cta">
@@ -34,7 +34,7 @@ Inspired by https://dribbble.com/shots/1937525-Create-New-Project
   </button>
 </div>
 ```
-###Automatically close input when focus is lost only if no text is entered.
+Automatically close input when focus is lost only if no text is entered.
 ```html
 <div class="form-button fixed-width red auto-close-on-empty">
   <label for="name" class="cta">
