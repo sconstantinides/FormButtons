@@ -10,7 +10,6 @@ $(function() {
     if(!$(event.target).is("label") &&
        !$(event.target).parent().is("label") &&
        !$(this).hasClass("active")) {
-      console.log('in');
       var fullWidth = $(this).hasClass("full-width");
       var containerWidth = $(this).outerWidth();
       if(fullWidth) {
@@ -29,11 +28,9 @@ $(function() {
       input.focus();
     }
   });
-
   $('.form-button').each(function(){
     $(this).attr('tab-index','-1');
   });
-
   $(".form-button").focusout(function(e){
     if(flag){
       flag=0;
