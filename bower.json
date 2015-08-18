@@ -8,14 +8,21 @@
   "homepage": "http://www.steliosconstantinides.com/FormButtons",
   "description": "Forms within buttons, oh my!",
   "main": [
-    "./css/min/all.min.css",
-    "./js/min/form_buttons.min.js"
+    "./css/form_buttons.css",
+    "./js/form_buttons.js"
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
-    "bower_components",
-    "node_modules"
+    "img",
+    "node_modules",
+    "sass",
+    ".gitignore",
+    "bower.json",
+    "gulpfile.js",
+    "index.haml",
+    "index.html",
+    "package.json",
+    "README.md"
   ],
   "dependencies": {
     "jquery": "~2.1"
