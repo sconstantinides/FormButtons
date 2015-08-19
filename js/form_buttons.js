@@ -28,9 +28,6 @@ $(function() {
       input.focus();
     }
   });
-  $('.form-button').each(function(){
-    $(this).attr('tab-index','-1');
-  });
   $(".form-button").focusout(function(e){
     if(flag){
       flag=0;
