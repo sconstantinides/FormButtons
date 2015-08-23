@@ -20,7 +20,7 @@
           %small Input width based on the length of the label
 
       .row
-        .form-button.fixed-width.red
+        .form-button.fixed-width.auto-close.red
           %label.cta{ for: "name" }
             %i.icon.fa.fa-file-text-o
             %span.text Create new file
@@ -29,7 +29,7 @@
             %i.fa.fa-arrow-right
 
       .row
-        .form-button.fixed-width.blue
+        .form-button.fixed-width.auto-close.blue
           %label.cta{ for: "email" }
             %i.icon.fa.fa-newspaper-o
             %span.text Get our newsletter
@@ -43,7 +43,7 @@
           %small Inputs expand to fill the container
 
       .row
-        .form-button.full-width.green
+        .form-button.full-width.auto-close.green
           %label.cta{ for: "search" }
             %i.icon.fa.fa-search
           %input.input{ type: "text", placeholder: "Search...", id: "search", name: "search" }
@@ -51,36 +51,10 @@
             %i.fa.fa-arrow-right
 
       .row
-        .form-button.full-width.purple
+        .form-button.full-width.auto-close.purple
           %label.cta{ for: "share" }
             %i.icon.fa.fa-share-alt
             %span.text Share
           %input.input{ type: "text", placeholder: "Email or phone number", id: "share", name: "share" }
-          %button.submit{ type: "submit" }
-            %i.fa.fa-arrow-right
-      .row
-        %h2
-          Auto close button-1
-          %small Input closes upon losing focus if no text was entered
-
-      .row
-        .form-button.full-width.purple.auto-close-on-empty
-          %label.cta{ for: "dog" }
-            %i.icon.fa.fa-paw
-            %span.text Search for a dog
-          %input.input{ type: "text", placeholder: "Search by yappyiness, cuteness, friendliness...", id: "dog", name: "dog" }
-          %button.submit{ type: "submit" }
-            %i.fa.fa-arrow-right
-      .row
-        %h2
-          Fixed-width buttons
-          %small Input width based on the length of the label
-
-      .row
-        .form-button.fixed-width.red.auto-close
-          %label.cta{ for: "name-dog" }
-            %i.icon.fa.fa-pencil
-            %span.text Name your dog
-          %input.input{ type: "text", placeholder: "Enter dog's name", id: "name-dog", name: "name-dog" }
           %button.submit{ type: "submit" }
             %i.fa.fa-arrow-right

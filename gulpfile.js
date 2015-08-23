@@ -20,6 +20,7 @@ gulp.task('scripts', function() {
   return gulp.src('js/*.js')
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
+    .on('error', onError)
     .pipe(gulp.dest('js/min'));
 });
 
@@ -27,6 +28,7 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
   return gulp.src('sass/*.sass')
     .pipe(sass())
+    .on('error', onError)
     .pipe(gulp.dest('css'))
     .pipe(minifyCss())
     .pipe(rename({suffix: '.min'}))
@@ -39,6 +41,7 @@ gulp.task('styles', function() {
 gulp.task('index', function() {
   gulp.src('index.haml')
     .pipe(haml())
+    .on('error', onError)
     .pipe(gulp.dest('./'));
 });
 
@@ -48,6 +51,12 @@ gulp.task('watch', function() {
   gulp.watch('sass/*.sass', ['styles']);
   gulp.watch('index.haml', ['index']);
 });
+
+// Error logging
+function onError(err) {
+  console.log(err);
+  this.emit('end');
+}
 
 // Run tasks
 gulp.task('default', ['lint', 'scripts', 'styles', 'index', 'watch']);
