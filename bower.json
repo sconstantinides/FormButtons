@@ -1,0 +1,30 @@
+{
+  "name": "FormButtons",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sconstantinides/FormButtons.git"
+  },
+  "homepage": "http://www.steliosconstantinides.com/FormButtons",
+  "description": "Forms within buttons, oh my!",
+  "main": [
+    "./css/form_buttons.css",
+    "./js/form_buttons.js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "img",
+    "node_modules",
+    "sass",
+    ".gitignore",
+    "bower.json",
+    "gulpfile.js",
+    "index.haml",
+    "index.html",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "jquery": "~2.1"
+  }
+}
