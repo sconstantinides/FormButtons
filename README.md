@@ -23,9 +23,9 @@ Inspired by https://dribbble.com/shots/1937525-Create-New-Project
 ```
 
 ## Options
-Options can be set by mixing & matching classes on <div class="form-button">
-- Width: Fixed-width by default. Add class "full-width" to have the input expand to fill its container.
-- Auto-close: Disabled by default. Add class "auto-close" to return the button to the initial state when the user clicks elsewhere.
+Options can be set by mixing & matching classes on `<div class="form-button">`
+- **Width:** Fixed-width by default. Add class "full-width" to have the input expand to fill its container.
+- **Auto-close:** Class "auto-close" returns the button to its initial state when the user clicks elsewhere.
 
 ## Feedback
 Feel free to open issues with suggestions or submit pull requests.
