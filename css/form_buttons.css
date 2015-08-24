@@ -65,11 +65,10 @@
       padding: 17px 5px 17px 15px; }
     .form-button label.submit, .form-button input.submit, .form-button button.submit {
       cursor: pointer;
-      display: none;
-      font-size: 20px;
-      padding: 0 10px;
       height: 50px;
-      line-height: 50px; }
+      line-height: 50px;
+      font-size: 20px;
+      padding: 0 10px; }
       .form-button label.submit:hover, .form-button input.submit:hover, .form-button button.submit:hover {
         color: #fff; }
   .form-button.active {
@@ -79,6 +78,5 @@
       padding-right: 0; }
       .form-button.active .cta .text {
         display: none; }
-    .form-button.active .input, .form-button.active .submit {
-      background: #fff;
+    .form-button.active .submit {
       display: inline-block; }
