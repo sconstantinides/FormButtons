@@ -2,7 +2,7 @@
 Inspired by https://dribbble.com/shots/1937525-Create-New-Project
 
 ## Examples
-![Examples](http://www.steliosconstantinides.com/FormButtons/img/example.gif)
+![Examples](https://sconstantinides.github.io/FormButtons/img/example.gif)
 
 ## Getting started
 1. Get the JS (also requires jQuery): [Normal JS](https://github.com/sconstantinides/FormButtons/blob/master/js/form_buttons.js) or [Minified JS](https://github.com/sconstantinides/FormButtons/blob/master/js/min/form_buttons.min.js)
